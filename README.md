@@ -4,7 +4,7 @@ This project is part of my 30-Day Machine Learning Algorithms Challenge (Day 2).
 The goal is to predict whether a passenger survived the Titanic disaster using the K-Nearest Neighbors (KNN) algorithm.
 
 🔗 Live App:
-https://titanicsurvivalpredication-hqyyluvqgdpjjes5yuhfif.streamlit.app/
+https://titanicsurvivalpredicationknn-trryik483ev48dwvwzhdr8.streamlit.app/
 
 📌 Project Overview
 
