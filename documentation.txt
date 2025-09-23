@@ -1,0 +1,57 @@
+# Titanic Survival Prediction - KNN
+
+## What is KNN?
+K-Nearest Neighbors (KNN) is a supervised machine learning algorithm used for classification and regression.  
+It classifies a data point based on how its neighbors are classified. The intuition is simple: "similar things exist in close proximity."
+
+- **Distance-based:** KNN calculates distances (usually Euclidean) between data points.  
+- **Majority voting:** For classification, the class most common among the k nearest neighbors is assigned.  
+- **Non-parametric:** KNN doesn’t assume any underlying distribution of the data.  
+
+---
+
+## Why scaling is important?
+Since KNN relies on distance, features like "Fare" and "Age" (larger numeric values) would dominate smaller-scale features like "Pclass" or "Embarked".  
+StandardScaler is used to normalize features so all features contribute equally.
+
+---
+
+## Effect of k
+- **Small k (e.g., 1):** High variance, low bias → very sensitive to noise.  
+- **Large k:** High bias, low variance → smoother decision boundaries, might miss fine details.  
+Choosing k is a balance between bias and variance.
+
+---
+
+## Workflow in this Project
+1. Upload Titanic dataset (`train.csv`).
+2. Clean & preprocess:
+   - Drop irrelevant columns (`Name`, `Ticket`, `Cabin`).
+   - Fill missing values (`Age` median, `Embarked` mode).
+   - Encode categorical (`Sex`, `Embarked`).
+   - Scale features.
+3. Train-test split (80-20).
+4. Train **KNeighborsClassifier** with chosen `k`.
+5. Evaluate with:
+   - Accuracy
+   - Confusion Matrix
+   - Classification Report (precision, recall, f1)
+6. Save model as `titanic_knn_model.pkl`.
+7. Streamlit UI:
+   - Upload dataset.
+   - Choose `k`.
+   - Run model & visualize evaluation.
+   - Custom input form for survival prediction.
+
+---
+
+## Comparison with Logistic Regression
+- Logistic Regression draws linear decision boundaries, while KNN makes non-linear ones.
+- Logistic Regression is parametric (learns coefficients), KNN is non-parametric (instance-based).
+- Logistic Regression works better with large datasets, KNN can be computationally heavy for large datasets.
+
+---
+
+## Conclusion
+KNN is intuitive and useful for small/medium datasets.  
+It shows how survival prediction changes based on neighbors in the dataset.
