@@ -63,6 +63,7 @@ Classification report with precision, recall, F1-score
 1️⃣ Clone this repository:
 
 git clone https://github.com/babneek/titanic_survival_predication_KNN.git
+
 cd titanic_survival_predication-knn
 
 
