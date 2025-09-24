@@ -36,7 +36,7 @@ We use KNN Classifier along with preprocessing techniques and interactive predic
 
 titanic_survival_predication-knn
 
-│── data/train.CSV
+│── data/train.CSV/n
 │── app.py                    
 │── documentation.txt         
 │── README.md                 
