@@ -29,11 +29,11 @@ We use KNN Classifier along with preprocessing techniques and interactive predic
 📂 Project Structure
 titanic_survival_predication-knn/
 │── data/
-│   └── train.csv             # Titanic dataset
-│── app.py                    # Streamlit web app
-│── documentation.txt         # Explanation of KNN & ML pipeline
-│── README.md                 # GitHub documentation
-│── requirements.txt          # Dependencies
+│   └── train.csv            
+│── app.py                    
+│── documentation.txt         
+│── README.md                 
+│── requirements.txt          
 
 🧠 About KNN Algorithm
 
