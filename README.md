@@ -19,16 +19,23 @@ We use KNN Classifier along with preprocessing techniques and interactive predic
 ✨ Features
 
 ✔️ Upload Titanic dataset (train.csv)
+
 ✔️ Automated data preprocessing (missing values, encoding, scaling)
+
 ✔️ KNN model training & evaluation
+
 ✔️ Metrics: Accuracy, Confusion Matrix, Classification Report
+
 ✔️ Interactive passenger survival prediction
+
 ✔️ Clear EDA visualizations for better understanding
+
 ✔️ Detailed explanation in documentation.txt
 
 📂 Project Structure
-titanic_survival_predication-knn/
-│── data/
+
+titanic_survival_predication-knn
+│── data
 │   └── train.csv            
 │── app.py                    
 │── documentation.txt         
